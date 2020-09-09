@@ -17,48 +17,48 @@ footer {
 }
 
 .a {
-  background-image: url("images/crash.png");
+  background-image: url("images/tom2.png");
 
 }
 
 .z {
-
-  background-image: url("images/kick.png");
-
-
-}
-
-.e {
-
-  background-image: url("images/snare.png");
-
-
-}
-
-.r {
-
-  background-image: url("images/tom1.png");
-
-
-}
-
-.t {
-
-  background-image: url("images/tom2.png");
-
-
-}
-
-.y {
 
   background-image: url("images/tom3.png");
 
 
 }
 
-.u {
+.e {
+
+  background-image: url("images/tom1.png");
+
+
+}
+
+.r {
 
   background-image: url("images/tom4.png");
+
+
+}
+
+.t {
+
+  background-image: url("images/snare.png");
+
+
+}
+
+.y {
+
+  background-image: url("images/crash.png");
+
+
+}
+
+.u {
+
+  background-image: url("images/kick.png");
 
 
 }
