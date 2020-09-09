@@ -10,14 +10,17 @@ body {
 
 h1 {
   font-size: 7rem;
-  color: #DBEDF3;
+  color: #d420c5;
   font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #DA0463;
+  text-shadow: 3px 0 #04d3da;
 }
 
 footer {
-  color: #DBEDF3;
-  font-family: sans-serif;
+  color: #e710b8;
+  font-family: "Arvo", bold;
+  font-size: 1.2rem;
+  text-shadow: 3px 0 #04d3da;
+
 }
 
 .a {
