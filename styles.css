@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-image: url("/images/music.jpg");
+  background-image: url("images/music.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -13,7 +13,6 @@ h1 {
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
-
 }
 
 footer {
@@ -23,7 +22,11 @@ footer {
 
 .a {
   background-image: url("images/tom2.png");
+  
 
+}
+.a:hover {
+  box-shadow: 10px 10px 8px 10px #DA0463;
 }
 
 .z {
@@ -32,12 +35,18 @@ footer {
 
 
 }
+.z:hover {
+  box-shadow: 10px 10px 8px 10px #DA0463;
+}
 
 .e {
 
   background-image: url("images/tom1.png");
 
 
+}
+.e:hover {
+  box-shadow: 10px 10px 8px 10px #DA0463;
 }
 
 .r {
@@ -46,6 +55,9 @@ footer {
 
 
 }
+.r:hover {
+  box-shadow: 10px 10px 8px 10px #DA0463;
+}
 
 .t {
 
@@ -53,19 +65,26 @@ footer {
 
 
 }
-
+.t:hover {
+  box-shadow: 10px 10px 8px 10px #DA0463;
+}
 .y {
 
   background-image: url("images/crash.png");
 
 
 }
-
+.y:hover {
+  box-shadow: 10px 10px 8px 10px #DA0463;
+}
 .u {
 
   background-image: url("images/kick.png");
 
 
+}
+.u:hover {
+  box-shadow: 10px 10px 8px 10px #DA0463;
 }
 
 .set {
