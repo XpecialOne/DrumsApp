@@ -8,6 +8,8 @@ document.querySelectorAll(".drum")[i].addEventListener("click", function (){
     var buttonInnerHTML = this.innerHTML;
 
     makeSound(buttonInnerHTML);
+    buttonAnimation(buttonInnerHTML);
+
 
   } );
 }
@@ -15,7 +17,9 @@ document.querySelectorAll(".drum")[i].addEventListener("click", function (){
 // Detecting keyboard key press
 document.addEventListener("keydown", function(event){
     makeSound(event.key);
+    buttonAnimation(event.key);
     console.log("You pressed the " + "'" + event.key + "'" + " key");
+
 });
 
 //
@@ -56,4 +60,21 @@ switch (key){
     default : console.log(buttonInnerHTML);
 
 };
+
+
+// Apply pression CSS class effect with a fading timeout
+
+}
+
+function buttonAnimation(currentKey) {
+   
+    var activeButton = document.querySelector("." + currentKey);
+
+    activeButton.classList.add("pressed");
+
+    setTimeout (function(){
+        activeButton.classList.remove("pressed");
+    }, 100);
+
+
 }
