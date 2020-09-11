@@ -1,28 +1,27 @@
 
-// Detecting HTML boutton press
-var numberOfDrumButtons = document.querySelectorAll(".drum").length;
-for (var i=0; i < numberOfDrumButtons; i++ ) {
+// Detecting HTML boutton press (JQuery update)
 
-document.querySelectorAll(".drum")[i].addEventListener("click", function (){
+$(".drum").click(function (){
 
     var buttonInnerHTML = this.innerHTML;
 
     makeSound(buttonInnerHTML);
     buttonAnimation(buttonInnerHTML);
+    console.log("You clicked the " + "'" + buttonInnerHTML + "'" + " button");
+
 
 
   } );
-}
 
-// Detecting keyboard key press
-document.addEventListener("keydown", function(event){
+
+// Detecting keyboard key press (JQuery update)
+$(document).keypress(function(event){
     makeSound(event.key);
     buttonAnimation(event.key);
     console.log("You pressed the " + "'" + event.key + "'" + " key");
 
 });
 
-//
 // Apply sound function
 function makeSound (key){
 
@@ -62,19 +61,19 @@ switch (key){
 };
 
 
-// Apply pression CSS class effect with a fading timeout
+// Apply pression CSS class effect with a fading timeout (JQuery updated)
 
 }
 
 function buttonAnimation(currentKey) {
    
-    var activeButton = document.querySelector("." + currentKey);
+    var press = currentKey + ':hover';
 
-    activeButton.classList.add("pressed");
+    $('.' + currentKey).addClass("pressed press");
 
     setTimeout (function(){
-        activeButton.classList.remove("pressed");
+        $('.' + currentKey).removeClass("pressed press");
     }, 100);
-
+   // The hover part still need some work
 
 }
